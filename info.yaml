@@ -1,0 +1,13 @@
+# 需要爬取的网址链接，这个网址为漫画主页，例如https://litu100.xyz/comic/id-62121d751d8fe.html
+target_url: https://litu100.xyz/comic/id-61b02f2c29c9a.html
+# placeholder 可以调整为自动获取，后续优化
+placeholder: 3
+
+# IDM的路径, python调用idm下载时，记得先打开idm
+idm_engine: "C:\\Program Files (x86)\\Internet Download Manager\\IDMan.exe"
+
+headers:
+  User_Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+
+# 下载图片的标准格式，具体为"https://img2.xchina.fun/comics/{fingerprint}/{chapter_index}/{placeholder&indexrage}.jpg"
+picDownUrl_fmt: "https://img2.xchina.fun/comics/{}/{}/{}.jpg"
